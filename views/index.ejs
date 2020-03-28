@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="icon" href="images/nucleus.ico">
+    <title>Infotsav</title>
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <!--logo top-left-->
+    <div class="orbit">
+        <img class="logo" src="images/name.png">
+    </div>
+    <!--inner orbit-->
+    <div class="orbit">
+        <div class="e">
+            <btn onclick="" class="btn_events">EVENTS</btn>
+        </div>
+        <div class="e">
+            <btn onclick="" class="btn_contact">CONTACT US</btn>
+        </div>
+    </div>
+    <!--outer orbit-->
+    <div class="orbit">
+        <!--for register-->
+        <div class="e">
+            <!--script to open reqquired div-->
+            <btn onclick="" class="btn_register">REGISTER<br>LOGIN</btn>
+        </div>
+        <div class="e">
+            <btn onclick="" class="btn_dashboard">DASHBOARD<br>PROFILE</btn>
+        </div>
+    </div>
+    <div class="orbit nucleus_circle">
+     <btn onclick="" class="btn_about"><img src="images/nucleus.png"></btn>
+    </div>
+    <video autoplay muted><source id="vid" src="videos/y2mate.com - Infotsav'16 Teaser_1s18k68dzgg_1080p (online-video-cutter.com).mp4" type="video/mp4"></video>
+    <div class="register">
+        <!--script to go to homepage-->
+        <btn class="regim" onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
+            <div class="reg1">
+        <form id="login" action="/register" method="POST">
+            <h1>LOGIN</h1>
+            <p>E-mail</p>
+            <input type="email" name="email" id="email" autofocus style="width:19vw;"></input><br>
+            <p>Password</p>
+            <input type="password" name="password" id="password" style="width: 19vw;"></input><br>
+            <input type="submit" name="submit" id="submit" value="Submit" style="position: relative; left:41.5vw; padding: 3px 14px; border-radius: 5px;"></input>
+        </form>
+        <btn class="forgot"><p>Forgot Password?</p></btn>
+        <p id="nyr" style="left:41vw;">Not yet registered?</p>
+        <button class="first">Register</button>
+        </div>
+        
+        <form id="forgot_password" action="/fgt pss" method="POST">
+            <h1>FORGOT PASSWORD</h1>
+            <p>E-mail</p>
+            <input type="email" name="email3" id="email3" autofocus></input><br>
+            <!--script to open the solution div-->
+            <!--aditya's work here-->
+            <input type="submit" name="submit3" id="submit3" value="Submit"></input>
+        </form>
+        <div class="solution">
+            <p>An email has been sent to your email account.</p>
+            <!--to open homepage-->
+            <btn onclick=""><p>Click here to go to homepage</p></btn>
+        </div>
+        <form id="first_time_register" action="/register" method="POST" name="first_time_register">
+            <div class="first_time_register1">
+            <h1>REGISTER</h1>
+            <p>Name</p>
+            <input type="text" name="name2" id="name2" autofocus></input><br>
+            <p>Phone Number</p>
+            <input type="tel" name="phone" id="phone"></input><br>
+            <p>Gender</p>
+            <select id="gender" form="first_time_register" name="gender">
+                <option value="male"><p>Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+            <br>
+            <p style="top:8vh; left:42vw;">Already registered?</p><br>
+            <!--script to go to login div-->
+            
+                <button onclick="" class="login_sec" style="left:44vw; top:6vh;">Login</button><br>
+            <!--script to go to the second part-->
+            <button class="next1" style="left:44.2vw; top:10vh;">Next</button>
+            </div>
+            <div class="first_time_register2">
+            <h1>REGISTER</h1>
+            <p>College/Organisation</p>
+            <!--script to autofocus at college-->
+            <input type="text" name="college" id="college" autofocus></input><br>
+            <p>City</p>
+            <input type="text" name="city" id="city"></input><br>
+            <p>E-mail</p>
+            <input type="email" name="email2" id="email2"></input><br>
+            <p>Password</p>
+            <input type="password" name="password2" id="password2"></input><br>
+            <input type="submit" name="register" id="register" value="Register" form="first_time_register"></input>
+            </div>
+        </form>
+    </div>
+    <ul class="social_media">
+    <a href="https://www.instagram.com/infotsav19/?hl=en" target="_blank"><img src="images/instaff.png"></a>
+    <a href="https://www.facebook.com/Infotsav/" target="_blank"><img src="images/fb.png"></a>
+    <a href="https://www.youtube.com/channel/UC9t8LEKnMKxGB_s7Qal9uJg" target="_blank"><img src="images/youtube-s.png"></a>
+    </ul>
+    <div id="contact">
+        <!--script to go to homepage-->
+        <btn class="contim" onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
+        <h2>CONTACT US:</h2>
+        <ul>
+            <li>RAVI CHOPRA <a href="mailto:shivamchopra1234567890@gmail.com"><img src="images/mail.png"></a><a href="tel:25288451"><img src="images/telephone.png"></a></li><br>
+            <li>KAVISH DADHICH <a href="mailto:shivamchopra1234567890@gmail.com"><img src="images/mail.png"></a><a href="tel:25288451"><img src="images/telephone.png"></a></li><br>
+            <li>ADITYA <a href="mailto:shivamchopra1234567890@gmail.com"><img src="images/mail.png"></a><a href="tel:25288451"><img src="images/telephone.png"></a></li><br>
+        </ul>
+        <h2 style="margin-top: 0;">FIND US:</h2>
+        <p style="width: 26vw; position: absolute; font-size: larger; top:54vh; left:20vw; line-height: 1.8;">Atal Bihari Vajpayee Indian Institute of Information Technology, Morean Link Road, Gwalior, Madhya Pradeh-474015</p>
+        <hr>
+        <div class="reach">
+        <h2>REACH US:</h2>
+        <form action="/reach" method="POST" id="reach_us" name="reach_us">
+            <p>Name</p>
+            <input type="text" name="name" id="name" autofocus></input><br>
+            <p>Email</p>
+            <input type="email" name="email_add" id="email_add"></input><br>
+            <p>Subject</p>
+            <input type="text" name="subject" id="subject"></input><br>
+            <p>Message</p>
+            <textarea id="message" name="message" form="reach_us"></textarea><br>
+            <input type="submit" name="submit" id="submit" value="Submit" style="position: relative; left:35.5vw; padding: 3px 14px; border-radius: 5px;"></input>
+        </form>
+        </div>
+    </div>
+    <div class="Events">
+        <btn class="evim" onclick="" style="cursor: pointer;" class="eve_logo"><img src="images/headers.png"></btn>
+        <div class="event1">
+        <h1>Robowars</h1>
+        <button class="exploreb" onclick="">Explore</button>
+        <img src="images/robowar.jpg">
+        </div>
+        <btn onclick="" class="arrow1"><img src="images/arrow.png"></btn>
+        <btn onclick="" class="arrow2"><img src="images/arrow (copy).png"></btn>
+        <div class="event2">
+        <h1>Programming<br>Quiz</h1>
+        <button class="exploreb"  onclick="">Explore</button>
+        <img src="images/programmingQuiz.png">
+        </div>
+        <div class="event3">
+        <h1>Hackathon</h1>
+        <button class="exploreb" onclick="">Explore</button>
+        <img src="images/hack.png">
+        </div>   
+
+
+        <!--Explore for programming quiz-->
+        <div class="explore">
+            <div class="part1">
+            <h2>PROGRAMMING QUIZ</h2>
+            <btn class="aboute" >About</btn>
+            <btn class="rulese" >Rules</btn>
+            <btn class="rege" >Register</btn>
+            </div>
+            <div class="e_about">
+                <h2>Description</h2>
+                <p>This quiz will test the participants coding knowledge in various languages such as C, C++, Java, Python etc.</p>
+                <h2>Prizes</h2>
+                <p>Worth ₹15k</p>
+                <h2>Event Heads</h2>
+                <p>Mohd Farhan Tahir (9616407700)<br>
+                    Mohit Kumar (8717984757)</p>
+                <h2>Event Organizers</h2>
+                <p>Chirag Jindal<br>
+                    Manvi Gupta</p>
+            </div>
+            <div class="e_rules">
+                <h2>Rules</h2>
+                <ul>
+                    <li><p>Basic knowledge of algorithms and data structures is required as well as knowledge of a programming language (C++, Java, Python).</p></li>
+                    <li><p>Each team will consist of two members. </p></li>
+                    <li><p>There will be 2 rounds conducted. First online qualifier and then final pen and paper round.</p></li>
+                    <li><p>Both rounds of the quiz will be held during Infotsav at ABV-IIITM campus.</p></li>
+                    <li><p>Online round will consist of 20 questions (may vary slightly).</p></li>
+                    <li><p>Most questions will have a time limit.</p></li>
+                    <li><p>There will be negative marks for each incorrect answer, no negative marks will be allotted for unattempted questions.</p></li>
+                    <li><p>In case of tie higher rank will be given to team having lesser wrong answers. </p></li>
+                    <li><p>50% of the teams selected for final round will be from ABV-IIITM and rest 50% from other colleges. (at most 20 teams).</p></li>
+                    <li><p>In case a team is found cheating, team will be disqualified straightaway.</p></li>
+                    <li><p>Teams should have a proper internet connection, it won’t be provided by the institute.</p></li>
+                </ul>
+            </div>
+            <div class="e_register">
+                <form action="/event" method="POST">
+                    <p>Enter Infotsav ID</p>
+                    <input type="text" name="IN-ID"></input><br>
+                    <input type="submit" value="Submit"></input><br>
+                </form>
+                <!--to open homepage-->
+            <btn onclick="">Click here to go to homepage</btn>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="profile">
+        <!--script to go to homepage-->
+        <btn class="proim" onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
+        <h1>PROFILE</h1>
+        <div class="image-upload">
+            <label for="file-input">
+              <img src="images/nucleus.png"/>
+            </label>
+            <input id="file-input" type="file" />
+          </div><br>
+        <p class="p_name">NAME NAME</p><br>
+        <p class="p1">IN-ID:</p class="p1">
+        <p class="p2">54619361</p><br>
+        <p class="p1">CONTACT NUMBER:</p>
+        <p class="p2">36146161</p><br>
+        <p class="p1">College/Organisation:</p>
+        <p class="p2">IIIT Gwalior</p><br>
+        <p class="p1">City:</p>
+        <p class="p2">Gwalior</p><br>
+        <btn class="open_dashboard">DASHBOARD</btn>
+        </div>
+        <h1 style="z-index: 100; position: absolute;"><%= notifi %></h1>
+    <script src="action.js"></script>
+</body>
+</html>
