@@ -57,7 +57,7 @@ app.post("/reach", (req, res) => {
         else
         {
             console.log("Not Found");
-            noti = "Please Login";
+            noti = "Please Register";
         }
         res.redirect("/result");
         if(err) throw err;
