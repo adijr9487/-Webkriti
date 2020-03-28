@@ -1,1 +1,1 @@
-web:node app.ja
+web:node app.js

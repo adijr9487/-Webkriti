@@ -1,17 +1,4 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styling.css">
-    <link rel="icon" href="images/nucleus.ico">
-    <title>Infotsav</title>
-    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet"> 
-</head>
-
-<body>
+<%- include("header"); -%>
     <!--logo top-left-->
     <div class="orbit">
         <img class="logo" src="images/name.png">
@@ -44,7 +31,7 @@
         <!--script to go to homepage-->
         <btn class="regim" onclick="" style="cursor: pointer;"><img src="images/headers.png"></btn>
             <div class="reg1">
-        <form id="login" action="/login" method="POST">
+        <form id="login" action="/register" method="POST">
             <h1>LOGIN</h1>
             <p>E-mail</p>
             <input type="email" name="email" id="email" autofocus style="width:19vw;"></input><br>
@@ -77,27 +64,27 @@
             <input type="text" name="name2" id="name2" autofocus></input><br>
             <p>Phone Number</p>
             <input type="tel" name="phone" id="phone"></input><br>
-            <p>Gender</p>
+            <!-- <p>Gender</p>
             <select id="gender" form="first_time_register" name="gender">
                 <option value="male"><p>Male</option>
                 <option value="female">Female</option>
                 <option value="others">Others</option>
             </select>
             <br>
-            <p style="top:8vh; left:42vw;">Already registered?</p><br>
+            <p style="top:8vh; left:42vw;">Already registered?</p><br> -->
             <!--script to go to login div-->
             
-                <button onclick="" class="login_sec" style="left:44vw; top:6vh;">Login</button><br>
+                <!-- <button onclick="" class="login_sec" style="left:44vw; top:6vh;">Login</button><br> -->
             <!--script to go to the second part-->
-            <button class="next1" style="left:44.2vw; top:10vh;">Next</button>
-            </div>
+            <!-- <button class="next1" style="left:44.2vw; top:10vh;">Next</button> -->
+            <!-- </div>
             <div class="first_time_register2">
             <h1>REGISTER</h1>
-            <p>College/Organisation</p>
+            <p>College/Organisation</p> -->
             <!--script to autofocus at college-->
-            <input type="text" name="college" id="college" autofocus></input><br>
-            <p>City</p>
-            <input type="text" name="city" id="city"></input><br>
+            <!-- <input type="text" name="college" id="college" autofocus></input><br>
+            <p>City</p> -->
+            <!-- <input type="text" name="city" id="city"></input><br> -->
             <p>E-mail</p>
             <input type="email" name="email2" id="email2"></input><br>
             <p>Password</p>
@@ -228,7 +215,6 @@
         <p class="p2">Gwalior</p><br>
         <btn class="open_dashboard">DASHBOARD</btn>
         </div>
-        <h1 style="z-index: 100; position: absolute;"><%= notifi %></h1>
     <script src="action.js"></script>
-</body>
-</html>
+
+<%- include("footer"); -%>
